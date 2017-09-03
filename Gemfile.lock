@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/jhyatt1017/hyatt_view_tool
+  revision: cc9e94f856d80e67bf3d36e7c7cf701f4a904a16
+  specs:
+    hyatt_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -189,6 +195,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.3)
   friendly_id (~> 5.1.0)
+  hyatt_view_tool!
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pry
