@@ -19,5 +19,6 @@ Bundler.require(*Rails.groups)
 
 module RailsPortfolio
   class Application < Rails::Application
+    config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
