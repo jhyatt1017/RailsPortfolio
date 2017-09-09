@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
 
 @font-face {
   font-family: 'Raleway';
@@ -271,4 +272,16 @@ p {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.social-links li {
+  font-size: 2.5em;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.h1-contact {
+  text-align: center;
 }
