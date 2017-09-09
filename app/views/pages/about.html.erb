@@ -8,13 +8,56 @@
       <div class="col-md-4">
     
         <%= image_tag "about_me_pic.jpg", width: 300, alt: "profile image", class: 'profile_img' %>
-        
+
       </div>
     
       <div class="col-md-8">
         <p>Hi, My name is Joseph Hyatt. Highly motivated front end developer with experience in HTML5, CSS3, JavaScript, WordPress, Ruby and Ruby on Rails. I focus on writing clean, elegant and efficient code. I love creating websites, I take challenges as inspiration and always looking for improvements. I believe in hard work and sharing what I know. My goal is to be successful by building fast and responsive websites which work today and in the future on every device possible.</p>
         <br>
         <p>On my off time I like to take my dog Duke out for walks, go out to eat, drink coffee and travel to new places.  I also like to get some ps4 in while I can. Big Call of Duty and BattleField fan, message me if you feel like putting your skills to the test :). Thank you for checking out my portfolio.  </p> 
+
+        <p>
+          <button 
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+              Job History 
+            </button>
+            <button 
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education 
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Job 1
+            </div>
+            <div class="card card-block">
+              Job 2
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              School 1
+            </div>
+            <div class="card card-block">
+              School 2
+            </div>
+          </div>          
+        </p>
       </div>
     </div>  
   </div>
