@@ -2,6 +2,16 @@
 @import "font-awesome";
 @import "gritter";
 
+@font-face {
+  font-family: 'Raleway';
+  src: font-url('Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Permanent Marker';
+  src: font-url('PermanentMarker-Regular.ttf');
+}
+
 /*
  * Globals
  */
@@ -13,7 +23,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Raleway', sans-serif;
   color: #555;
 }
 
@@ -23,9 +33,13 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Permanent Marker', cursive;
   font-weight: normal;
   color: #333;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -191,3 +205,10 @@ h6, .h6 {
    font-weight: 700;
  }
 
+.blog-nav {
+  margin-block-end: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
+}
