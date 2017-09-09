@@ -3,11 +3,15 @@ Rails.application.routes.draw do
   resources :portfolios, except: [:show] do
     put :sort, on: :collection
   end
+
+  
+
   get 'angular-items', to: 'portfolios#angular'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  post 'contact', to: 'pages#contact'
   get 'tech-news', to: 'pages#tech_news'
 
   resources :blogs do
