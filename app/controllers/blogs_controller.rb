@@ -8,7 +8,7 @@ class BlogsController < ApplicationController
   def index
     if logged_in?(:site_admin)
       @blogs = Blog.recent.page(params[:page]).per(5)
-    else 
+    else
       @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
     @page_title = "My Portfolio Blog"
@@ -23,8 +23,8 @@ class BlogsController < ApplicationController
 
       @page_title = @blog.title
       @seo_keywords = @blog.body
-    else 
-      redirect_to blogs_path, notice: "HA, Nice try! You are not authorized to access this page. :)"
+    else
+      redirect_to blogs_path, notice: "You are not authorized to access this page"
     end
   end
 
@@ -84,13 +84,12 @@ class BlogsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_blog
-      @blog = Blog.friendly.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def blog_params
-      params.require(:blog).permit(:title, :body)
-    end
+  def set_blog
+    @blog = Blog.friendly.find(params[:id])
+  end
+
+  def blog_params
+    params.require(:blog).permit(:title, :body, :topic_id)
+  end
 end
