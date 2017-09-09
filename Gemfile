@@ -7,7 +7,6 @@ end
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'rails', '~> 5.1.3'
-gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -28,6 +27,10 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :production do 
+  gem 'pg', '~> 0.21.0'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -51,4 +54,9 @@ gem 'twitter', '~> 6.1'
 gem 'redis', '~> 4.0'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+
 gem 'mail_form', '~> 1.7'
+=======
+
+ruby "2.4.0" 
+
