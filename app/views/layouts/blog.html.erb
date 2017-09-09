@@ -14,29 +14,22 @@
   </head>
 
   <body>
-    <!-- Start of Nav -->
-    <%= render 'shared/blog_nav' %>
-    <!-- End of Nav -->
 
-    <!-- Start of blog header -->
+    <%= render 'shared/blog_nav' %>
     <%= render 'shared/blog_masthead' %>
-    <!-- End of blog header -->
 
     <div class="container">
-      
+
       <div class="row">
 
         <%= yield %>
 
-        <!-- Start of sidebar -->
         <%= render 'shared/blog_sidebar' %>
-        <!-- End of sidebar --> 
-    
-        <!-- Start of footer -->
-        <%= render 'shared/blog_footer' %>
-        <!-- End of footer -->
+      </div>
 
-        <%= alerts %>
+      <%= render 'shared/blog_footer' %>
+
+      <%= alerts %>
 
       <%= source_helper("blog") %>
     </div>
