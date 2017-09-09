@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
 
 @font-face {
   font-family: 'Raleway';
@@ -272,3 +273,8 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.social-links li {
+  font-size: 2.5em;
+}
+
