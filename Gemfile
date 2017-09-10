@@ -31,6 +31,7 @@ end
 
 group :production do 
   gem 'pg', '~> 0.21.0'
+  gem 'sqlite3', '~> 1.3', '>= 1.3.13'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
