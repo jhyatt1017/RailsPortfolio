@@ -60,3 +60,5 @@ gem 'redis', '~> 4.0'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'mail_form', '~> 1.7'
+
+ruby '2.3.4'
