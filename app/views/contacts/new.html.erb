@@ -1,0 +1,38 @@
+<div class="app-card-container">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="contact-title">Would you like to work together?</h1>
+
+            <br>
+
+            <div class="skinny_wrapper wrapper_padding">
+            <%= form_for @contact do |f| %>
+              <%= f.label :name %>
+              <%= f.text_field :name, required: true %>
+
+            
+
+            <%= f.label :email %>
+            <%= f.email_field :email, required: true %>
+
+         
+
+            <%= f.label :message %>
+            <%= f.text_area :message, as: :text %>
+
+            <div class="hidden">
+              <%= f.label :nickname %>
+              <%= f.text_field :nickname, hint: 'leave this field blank' %>
+            </div>
+
+            <br>
+
+              <%= f.submit 'Send Message', class: "btn btn-primary" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
