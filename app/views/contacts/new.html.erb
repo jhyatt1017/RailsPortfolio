@@ -1,10 +1,10 @@
-<div class="app-card-container">
+<div class="app-card-container contact-card">
     <div class="card">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12"> 
           <h1 id="contact-title">Would you like to work together?</h1>
 
-            <br>
+            
 
             <div class="skinny_wrapper wrapper_padding">
             <%= form_for @contact do |f| %>
@@ -25,8 +25,6 @@
               <%= f.label :nickname %>
               <%= f.text_field :nickname, hint: 'leave this field blank' %>
             </div>
-
-            <br>
 
               <%= f.submit 'Send Message', class: "btn btn-primary" %>
             <% end %>
