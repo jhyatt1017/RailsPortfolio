@@ -87,6 +87,7 @@ Rails.application.configure do
   end
 
   # Do not dump schema after migrations.
+  
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { :host => 'jnh-portfolio.herokuapp.com' }  
@@ -98,7 +99,7 @@ Rails.application.configure do
     address: "smtp.gmail.com",
     port: 587,
     domain: "gmail.com",
-    authentication: "login",
+    authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["GMAIL_USERNAME"],
     password: ENV["GMAIL_PASSWORD"]
